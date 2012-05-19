@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'json'
+gem 'haml'
 
 gem 'therubyracer'
 
