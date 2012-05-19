@@ -11,10 +11,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20120519074819) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
+=======
+ActiveRecord::Schema.define(:version => 20120519074822) do
+
+  create_table "report_logs", :force => true do |t|
+    t.integer  "user_id_id"
+    t.integer  "report_id_id"
+    t.string   "comment"
+    t.string   "file"
+    t.string   "type"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "report_logs", ["user_id_id"], :name => "index_report_logs_on_user_id_id"
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "username"
+    t.string   "password"
+    t.string   "status"
+>>>>>>> 13c916b8347ab9ff1ae8d961844197d183cb4e07
     t.datetime "created_at"
     t.datetime "updated_at"
   end
