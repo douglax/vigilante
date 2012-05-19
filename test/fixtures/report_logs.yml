@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 
+  report_id: 
+  file: MyString
+  type: 
+  status: MyString
+
+two:
+  user_id: 
+  report_id: 
+  file: MyString
+  type: 
+  status: MyString
